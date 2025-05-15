@@ -2,12 +2,8 @@ import { useState } from "react";
 import { VodPlayer } from "./VodPlayer";
 
 function App() {
-  const [manifest, setManifest] = useState(
-    "https://media.olecams.com/v3/22336/xcoded/CHf38a7856-956d-4eb2-b1f3-7c7b042cd4af.json"
-  );
-  const [poster, setPoster] = useState(
-    "https://fotos.olecams.com/v1/videos_thumbnails/11308.jpg"
-  );
+  const [manifest, setManifest] = useState("");
+  const [poster, setPoster] = useState("");
   const [controls, setControls] = useState(false);
   const [muted, setMuted] = useState(false);
   const [autoPlay, setAutoPlay] = useState(false);
